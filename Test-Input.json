@@ -1,0 +1,50 @@
+[    
+    {
+        "testname" : "POST-Test-1",
+        "apipath" : "/api/v1/dxhub/pubsub/publish/dxhubtest2--stream-A-May20",
+        "header" : "X-Auth-Token",
+        "token" : "eyJhbGciOiJFUzI1NiIsImtpZCI6IiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJDRE5BIiwiYXV0aFNvdXJjZSI6ImlkbS50ZXNzZXJhY3RpbnRlcm5hbC5jb20iLCJjbGllbnRJZCI6ImRhc2hib2FyZCIsImV4cCI6MTk1NDA5MTcwMiwiaWF0IjoxNTk0MDkxNzAyLCJpc3MiOiJpZG0udGVzc2VyYWN0aW50ZXJuYWwuY29tIiwicHIiOiJ1c2VyIiwicm9sZXMiOlsiU1VQRVItQURNSU4iXSwic3ViIjoiNTA1Yzg1MWMtNTIxZS00ZjAzLTk5NzMtMmFiOTY2ZmRiNmYzIiwidGVuYW50SWQiOiI1MDVjODUxYy01MjFlLTRmMDMtOTk3My0yYWI5NjZmZGI2ZjMiLCJ0ZW5hbnROYW1lIjoiQ0ROQSBBZG1pbiIsInVzZXJuYW1lIjoiQ0ROQSBBZG1pbiJ9.Ft5iPlOoLMtzdi98QV-dgJOfcOd-IxF4ITHo0V-a8FoKlE8l9fCZSkuLYxcUvw4sru-6lWRgCxDznt2D8mwrlg",
+        "clusterpath" : "maglev.perf-mm-11.tesseractinternal.com",
+        "method" : "POST",
+        "threads1" : 5,
+        "threads2" : 10,
+        "duration" : 120,
+        "pods" : 2
+    },
+    {
+        "testname" : "POST-TEST-2",
+        "apipath" : "api/dxhub/v1/apiproxy/request/5ed5760a0e0981001861ef7f/asyncCallback",
+        "header" : "X-Auth-Token",
+        "token" : "eyJhbGciOiJFUzI1NiIsImtpZCI6IiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJDRE5BIiwiYXV0aFNvdXJjZSI6ImlkbS50ZXNzZXJhY3RpbnRlcm5hbC5jb20iLCJjbGllbnRJZCI6ImRhc2hib2FyZCIsImV4cCI6MTk1NDA5MTcwMiwiaWF0IjoxNTk0MDkxNzAyLCJpc3MiOiJpZG0udGVzc2VyYWN0aW50ZXJuYWwuY29tIiwicHIiOiJ1c2VyIiwicm9sZXMiOlsiU1VQRVItQURNSU4iXSwic3ViIjoiNTA1Yzg1MWMtNTIxZS00ZjAzLTk5NzMtMmFiOTY2ZmRiNmYzIiwidGVuYW50SWQiOiI1MDVjODUxYy01MjFlLTRmMDMtOTk3My0yYWI5NjZmZGI2ZjMiLCJ0ZW5hbnROYW1lIjoiQ0ROQSBBZG1pbiIsInVzZXJuYW1lIjoiQ0ROQSBBZG1pbiJ9.Ft5iPlOoLMtzdi98QV-dgJOfcOd-IxF4ITHo0V-a8FoKlE8l9fCZSkuLYxcUvw4sru-6lWRgCxDznt2D8mwrlg",
+        "clusterpath" : "maglev.perf-mm-11.tesseractinternal.com",
+        "method" : "POST",
+        "threads1" : 5,
+        "threads2" : 10,
+        "duration" : 120,
+        "pods" : 2
+    },
+    {
+        "testname" : "GET-TEST-1",
+        "apipath" : "api/dxhub/v1/registry/syncs/5ed5760a0e0981001861ef7f",
+        "header" : "X-Auth-Token",
+        "token" : "eyJhbGciOiJFUzI1NiIsImtpZCI6IiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJDRE5BIiwiYXV0aFNvdXJjZSI6ImlkbS50ZXNzZXJhY3RpbnRlcm5hbC5jb20iLCJjbGllbnRJZCI6ImRhc2hib2FyZCIsImV4cCI6MTk1NDA5MTcwMiwiaWF0IjoxNTk0MDkxNzAyLCJpc3MiOiJpZG0udGVzc2VyYWN0aW50ZXJuYWwuY29tIiwicHIiOiJ1c2VyIiwicm9sZXMiOlsiU1VQRVItQURNSU4iXSwic3ViIjoiNTA1Yzg1MWMtNTIxZS00ZjAzLTk5NzMtMmFiOTY2ZmRiNmYzIiwidGVuYW50SWQiOiI1MDVjODUxYy01MjFlLTRmMDMtOTk3My0yYWI5NjZmZGI2ZjMiLCJ0ZW5hbnROYW1lIjoiQ0ROQSBBZG1pbiIsInVzZXJuYW1lIjoiQ0ROQSBBZG1pbiJ9.Ft5iPlOoLMtzdi98QV-dgJOfcOd-IxF4ITHo0V-a8FoKlE8l9fCZSkuLYxcUvw4sru-6lWRgCxDznt2D8mwrlg",
+        "clusterpath" : "maglev.perf-mm-11.tesseractinternal.com",
+        "method" : "GET",
+        "threads1" : 5,
+        "threads2" : 10,
+        "duration" : 120,
+        "pods" : 2
+    },
+    {
+        "testname" : "GET-TEST-2",
+        "apipath" : "api/dxhub/v1/registry/feeds",
+        "header" : "X-Auth-Token",
+        "token" : "eyJhbGciOiJFUzI1NiIsImtpZCI6IiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJDRE5BIiwiYXV0aFNvdXJjZSI6ImlkbS50ZXNzZXJhY3RpbnRlcm5hbC5jb20iLCJjbGllbnRJZCI6ImRhc2hib2FyZCIsImV4cCI6MTk1NDA5MTcwMiwiaWF0IjoxNTk0MDkxNzAyLCJpc3MiOiJpZG0udGVzc2VyYWN0aW50ZXJuYWwuY29tIiwicHIiOiJ1c2VyIiwicm9sZXMiOlsiU1VQRVItQURNSU4iXSwic3ViIjoiNTA1Yzg1MWMtNTIxZS00ZjAzLTk5NzMtMmFiOTY2ZmRiNmYzIiwidGVuYW50SWQiOiI1MDVjODUxYy01MjFlLTRmMDMtOTk3My0yYWI5NjZmZGI2ZjMiLCJ0ZW5hbnROYW1lIjoiQ0ROQSBBZG1pbiIsInVzZXJuYW1lIjoiQ0ROQSBBZG1pbiJ9.Ft5iPlOoLMtzdi98QV-dgJOfcOd-IxF4ITHo0V-a8FoKlE8l9fCZSkuLYxcUvw4sru-6lWRgCxDznt2D8mwrlg",
+        "clusterpath" : "maglev.perf-mm-11.tesseractinternal.com",
+        "method" : "GET",
+        "threads1" : 5,
+        "threads2" : 10,
+        "duration" : 120,
+        "pods" : 2
+    }
+]
