@@ -145,7 +145,7 @@ with pictures and some brief commentary of how the program operates.
     to enter the numerical value of their answer in a list, rather than
     a string of the answer itself. Therefore, to select No, the user
     enters 2.\
-    \
+    
 
 2.  The test will then begin with 5 threads making API calls and will
     continue for the duration of the test (in this case 120 seconds).
@@ -157,7 +157,7 @@ with pictures and some brief commentary of how the program operates.
     well as the mean, median, 90th, and 95th percentile of latency.
     While throughput is the key dependent variable measured, the other
     values provide important measures for the success of the API run.\
-    \
+    
 
 3.  After completing the first run, the script will proceed to testing
     at the second default thread level of 10. After completing the run,
@@ -172,12 +172,12 @@ with pictures and some brief commentary of how the program operates.
     through conversations and guidance from QA engineers. If the
     throughput is both positive and significant, then the test will
     continue.\
-    \
+    
 
 4.  At this point, the thread count will begin increasing by the pods
     multiplier. Because the default multiplier is 2, the test will now
     test the API at 20 threads.\
-    \
+    
 
 5.  Eventually, the test will place sufficient stress on the API that it
     will no longer operate efficiently. At this point, the change in
@@ -194,7 +194,7 @@ with pictures and some brief commentary of how the program operates.
     always halt at 160, regardless of if the API can handle greater
     load. Even if other default thread counts are used, the test will
     always halt at or before 200.\
-    \
+    
 
 ### Post-Test Results
 -----------------
