@@ -1,0 +1,11 @@
+{
+  "messages": [
+    {
+      "messagekey": {
+        "SCHEMAID": "e6c07a5a-c4c4-11e9-aa8c-2a2ae2dbcce4"
+      },
+      "binaryPayload": "ewogICJmaWVsZDEiOiAidmFsdWUxIiwKICAiZmllbGQyIjogImZpZWxkMiIKfQ==",
+      "encodingType": "base64"
+    }
+  ]
+}

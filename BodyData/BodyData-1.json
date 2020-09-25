@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "version": "1.0",
+    "messageId": "validapi-100-July23-1", 
+    "authorization" : {
+      "dnac": "NETWORK-ADMIN-ROLE",
+      
+      "headers" : [
+      {
+        "key" : "commonkey1",
+        "value" : "commonvalue1"
+      }
+    ]
+      
+    }
+   
+  },
+                         
+  "requests": [
+    {
+       "headers" : [
+          {
+            "key" : "request1key1",
+            "value" : "request1value1"
+          }
+       ],
+      "order" :  1,
+      "operation": "GET", 
+      "uri": "/api/assurance/v1/threshold/siteHealth/overallNetworkHealth", 
+      "requestId": "req-1",
+      "timeout": 0,
+      "body" : "Test Body"
+      
+    }
+    
+  ],
+  "notification":  {
+      "url": "http://ec2-13-58-110-252.us-east-2.compute.amazonaws.com:8765/apiproxy_validapiproxy",
+      "method": "POST",
+      "headers" : [
+          {
+            "key" : "Content-type",
+            "value" : "application/json"
+          }
+       ]
+    },
+  "timeout": 1
+   
+}
