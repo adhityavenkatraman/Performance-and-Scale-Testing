@@ -1,8 +1,6 @@
 Performance and Scale Testing
 =============================
 
-#### Adhitya Venkatraman Summer 2020 Intern Project
-
 #### Introduction
 
 Performance and scale (PnS) testing is essential to creating reliable,
