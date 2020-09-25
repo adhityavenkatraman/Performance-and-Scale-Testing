@@ -1,9 +1,7 @@
 Performance and Scale Testing
 =============================
 
-#### Adhitya Venkatraman Summer 2020 Intern Project
-
-#### Introduction
+### Introduction
 
 Performance and scale (PnS) testing is essential to creating reliable,
 scalable services for the cloud. This application offers a simple,
@@ -26,7 +24,7 @@ printed so that developers know exactly how well their API is running.
 When one API has been tested, the tool will proceed to the next one.
 After each test, a results file is also produced for each run.
 
-Dependencies
+### Dependencies
 
 There are a few tools that developers must download to run the program,
 if they do not have them already. Many of these tools may already be
@@ -56,9 +54,9 @@ read about/download them. 
         empty folder titled \"**jmeter**\". This is done to ensure that
         the script will continue to perform, even as new versions of
         JMeter are released. Ensure that the new **jmeter** folder is in
-        the same directory as **[pnstestapp.sh]{.ul}**
+        the same directory as **pnstestapp.sh**
 
-Files
+### Files
 
 Along with the script itself, two additional files and one folder are
 included: Test-Script.jmx, Test-Input.json, and BodyData. This include a
@@ -69,7 +67,7 @@ data carried by APIs. Because many process are automated by the script,
 certain file naming conventions must be maintained for the script to
 work. [Also, ensure that the **pnstestapp.sh**, the **Test-Script.jmx**
 file, the **Test-Input.json** file, the **BodyData** folder, and the
-**jmeter **folder are all in the same directory.]{.ul}
+**jmeter **folder are all in the same directory.]
 
 Of these files, only the contents of Test-Input.json and BodyData (which
 contains more .json files) should be edited by the user. Again, users
@@ -84,13 +82,13 @@ BodyData.
 | **BodyData**        | This folder contains body data for API calls that send information, like those that use a PUSH method. Within the folder, users will create a separate .json file containing the Body Data for each API that needs one. When creating new files, within BodyData, name each new file BodyData-X.json, where X is the index value of the corresponding API within the Test-Input.json, starting with 0. For example, if I am creating a .json file for the body of the first API in Test-Input.json, then the body file will be named BodyData-0.json. Maintain this naming convention to ensure that the each API is matched with the correct body data. |
 
 
-Configuring a Test
+### Configuring a Test
 
 Once the script, the supplementary files, and the dependencies are
 downloaded, users can begin configuring their tests by
-editing **Test-Input.json **and **BodyData**.
+editing **Test-Input.json** and **BodyData**.
 
-The **Test-Input.json **file includes several different variables and
+The **Test-Input.json** file includes several different variables and
 parameters that the user can set. There are 10 key-value pairs that
 should be filled in for each API. Each API is a separate object. The
 first six are string values that will be unique to each API:
@@ -125,20 +123,15 @@ in **Test-Input.json.**
 
 The below image captures the structure of the **Test-Input.json **file.
 
-![](pic1.png)
-
-The **BodyData **folder will contain multiple .json files. Because body
+The **BodyData** folder will contain multiple .json files. Because body
 data is often stored in a .json format, there is generally no additional
 formatting that needs to be done here.
 
 See below for an example of both the file structure of
-the **BodyData **folder and an example of what the body data looks like
+the **BodyData** folder and an example of what the body data looks like
 within a BodyData-X.json file.
 
-![](pic2.png)
-![](Picture3.png)
-
-Running a Test
+### Running a Test
 --------------
 
 After the input data is configured, we can begin testing APIs. Below is
@@ -153,7 +146,6 @@ with pictures and some brief commentary of how the program operates.
     a string of the answer itself. Therefore, to select No, the user
     enters 2.\
     \
-    ![](Picture4.png)
 
 2.  The test will then begin with 5 threads making API calls and will
     continue for the duration of the test (in this case 120 seconds).
@@ -166,7 +158,6 @@ with pictures and some brief commentary of how the program operates.
     While throughput is the key dependent variable measured, the other
     values provide important measures for the success of the API run.\
     \
-    ![](Picture5.png)
 
 3.  After completing the first run, the script will proceed to testing
     at the second default thread level of 10. After completing the run,
@@ -182,13 +173,11 @@ with pictures and some brief commentary of how the program operates.
     throughput is both positive and significant, then the test will
     continue.\
     \
-    ![](Picture6.png)
 
 4.  At this point, the thread count will begin increasing by the pods
     multiplier. Because the default multiplier is 2, the test will now
     test the API at 20 threads.\
     \
-    ![](Picture7.png)
 
 5.  Eventually, the test will place sufficient stress on the API that it
     will no longer operate efficiently. At this point, the change in
@@ -206,15 +195,14 @@ with pictures and some brief commentary of how the program operates.
     load. Even if other default thread counts are used, the test will
     always halt at or before 200.\
     \
-    ![](Picture8.png)
 
-Post-Test Results
+### Post-Test Results
 -----------------
 
 A new \"results\" folder is created in the same directory that the
 script is called from. Several comprehensive results files will populate
 this folder as the tests progress. The testname variable assigned by the
-user in the **Test-Inputs.json **file will be crucial to distinguishing
+user in the **Test-Inputs.json** file will be crucial to distinguishing
 these files. Each result file name will include the date, time, and API
 test name. In addition to the summary statistics and results that are
 displayed live during each test, JMeter will produce these results as
@@ -228,7 +216,6 @@ additional statistics or conducting further analysis of their tests. To
 do so within the Bash terminal, awk is recommended to parse the results
 files or fill new columns with additional calculations. Below is a
 sample results file.
-![](Picture9.png)
 
 For additional questions about this tool,
 contact <avenkatraman22@cmc.edu.> 
