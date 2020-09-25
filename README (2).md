@@ -144,7 +144,7 @@ with pictures and some brief commentary of how the program operates.
     defaults. Note that in Bash, selection of a menu requires the user
     to enter the numerical value of their answer in a list, rather than
     a string of the answer itself. Therefore, to select No, the user
-    enters 2.\
+    enters "2".
     
 
 2.  The test will then begin with 5 threads making API calls and will
@@ -156,7 +156,7 @@ with pictures and some brief commentary of how the program operates.
     measure the performance of the API, such as the mean throughput, as
     well as the mean, median, 90th, and 95th percentile of latency.
     While throughput is the key dependent variable measured, the other
-    values provide important measures for the success of the API run.\
+    values provide important measures for the success of the API run.
     
 
 3.  After completing the first run, the script will proceed to testing
@@ -171,12 +171,12 @@ with pictures and some brief commentary of how the program operates.
     run to have the optimal thread level. These cutoffs were determined
     through conversations and guidance from QA engineers. If the
     throughput is both positive and significant, then the test will
-    continue.\
+    continue.
     
 
 4.  At this point, the thread count will begin increasing by the pods
     multiplier. Because the default multiplier is 2, the test will now
-    test the API at 20 threads.\
+    test the API at 20 threads.
     
 
 5.  Eventually, the test will place sufficient stress on the API that it
@@ -184,7 +184,8 @@ with pictures and some brief commentary of how the program operates.
     throughput will likely be less than 5 bytes/second or 10% of the
     previous run. In the example below, both of these conditions are
     met. Thus, the test is concluded, and the script indicates to the
-    user that their API can handle 160 threads. \
+    user that their API can handle 160 threads. 
+    
     An important note is that the test will halt always halt at or
     before 200 threads. This is because the focus of the tool is to
     determine if the API can handle a certain threshold of stress,
@@ -193,13 +194,13 @@ with pictures and some brief commentary of how the program operates.
     test. For this reason, under the default parameters, the test will
     always halt at 160, regardless of if the API can handle greater
     load. Even if other default thread counts are used, the test will
-    always halt at or before 200.\
+    always halt at or before 200.
     
 
 ### Post-Test Results
 -----------------
 
-A new \"results\" folder is created in the same directory that the
+A new "results" folder is created in the same directory that the
 script is called from. Several comprehensive results files will populate
 this folder as the tests progress. The testname variable assigned by the
 user in the **Test-Inputs.json** file will be crucial to distinguishing
